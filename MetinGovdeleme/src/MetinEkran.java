@@ -656,7 +656,7 @@ import java.time.temporal.ChronoUnit;
                 else
                 { 
 /*ortak ek*/    String enyakin_fiil_govde=ortak_ek_kontrol(kelimenin_ilk_hali,kelimenin_eksiz_hali);
-                if (enyakin_fiil_govde.equals(kelimenin_ilk_hali)==false) {dosyayayazdir(enyakin_fiil_govde);} 
+                if (enyakin_fiil_govde.equals(kelimenin_ilk_hali)==false && kelimenin_eksiz_hali.equals(kelimenin_ilk_hali)==false) {dosyayayazdir(enyakin_fiil_govde);} 
         
                 else /****** isim soylu kelimelere geçildi. ******/
                 {               
